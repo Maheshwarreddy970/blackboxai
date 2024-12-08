@@ -6,7 +6,6 @@ import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
-import Darklogo from "@/public/Blackboxai-logo-black.svg";
 import { ModeToggle } from "./theme-toggle";
 import BlackLogo from "@/icons/BlackLogo";
 import WhiteLogo from "@/icons/WhiteLogo";
