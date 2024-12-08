@@ -38,9 +38,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <ThemeProvider
-          attribute="class"
           defaultTheme="dark"
-          disableTransitionOnChange
         >
           <Navbar />
           <main className="sm:container mx-auto w-[90vw] h-auto scroll-smooth">
