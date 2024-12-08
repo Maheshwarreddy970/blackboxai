@@ -48,7 +48,7 @@ export function Navbar() {
             </div>
           </div>
         </div>
-        
+
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
             {/* <Search /> */}
@@ -80,8 +80,8 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="">
-            <Lightlogo  className="  hidden dark:block  w-72 "/>
-            <Darklogo  className=" dark:hidden w-72 "/>
+      <Lightlogo className="  hidden dark:block  w-72 " />
+      <Darklogo className=" dark:hidden w-72 " />
 
     </Link>
   );

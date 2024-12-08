@@ -30,12 +30,12 @@ export default function page() {
                     transition={{ repeat: Infinity, ease: 'linear', repeatType: 'loop', duration: 6 }}
                     className=' size-96 bg-lime-600 absolute blur-[90px] -right-[12rem] -bottom-[6rem] rounded-full'>
                 </motion.div>
-                <div className=' leading-[2.9rem]  mx-auto w-[80vw] mb-10   ' >
+                <div className=' leading-[2.9rem]  mx-auto w-[80rem] mb-10   ' >
                     <p className=' text-[3rem]'>Build with Grok</p>
                     <p className=' text-[3rem] opacity-45'>using the xAI API</p>
                 </div>
             </div>
-            <div className='mx-auto w-[80vw] '>
+            <div className='mx-auto w-[80rem] '>
                 <div className='py-16 border-b'>
                     <p className=' text-xl max-w-xl'>We’re excited to announce the launch of the xAI API, giving developers unfiltered access to our state-of-the-art language models.</p>
                     <div className=' mt-9 flex gap-5'>
@@ -109,11 +109,11 @@ export default function page() {
                 <div className='  flex flex-col items-center  -mt-44 gap-5' >
                     <p className=' text-[3rem]'>Grok. Grok? Grok!</p>
                     <div>
-                    <button className="group/button relative inline-flex items-center gap-1 overflow-hidden rounded-xl bg-white/80 px-5 py-2.5 font-semibold text-black duration-300 hover:bg-white">
-                        <TextGlitch text="Let's Go" />
-                        <Brightness className="bg-white/40" />
-                        <ChevronRight className="group-hover/button:translate-x-2 transition-all duration-300 ease-in-out" />
-                    </button>
+                        <button className="group/button relative inline-flex items-center gap-1 overflow-hidden rounded-xl bg-white/80 px-5 py-2.5 font-semibold text-black duration-300 hover:bg-white">
+                            <TextGlitch text="Let's Go" />
+                            <Brightness className="bg-white/40" />
+                            <ChevronRight className="group-hover/button:translate-x-2 transition-all duration-300 ease-in-out" />
+                        </button>
                     </div>
                 </div>
             </div>

@@ -10,9 +10,9 @@ import { useEffect } from "react";
 
 export default function Home() {
   const { setTheme } = useTheme();
-useEffect(() => {
-  setTheme("dark")
-},[])
+  useEffect(() => {
+    setTheme("dark")
+  }, [])
   return (
     <main className="max-w-[80rem] mx-auto">
       <div
@@ -46,14 +46,14 @@ useEffect(() => {
             Read about our <br className='hidden lg:block'></br> latest announcements
           </div>
           <BlogCard
-          href="/blog/file-rec"
+            href="/blog/file-rec"
             image="/api-teaser.webp"
             date="November 4, 2024"
             title="API Public Beta"
             subtitle="Starting today, developers can build on our Grok foundation models using our newly released API. We will run a public beta program until the end of 2024 during which everyone will get $25 of free API credits per month."
           ></BlogCard>
           <BlogCard
-          href="/blog/file-rec"
+            href="/blog/file-rec"
             image="/image.png"
             date="November 4, 2024"
             title="API Public Beta"
