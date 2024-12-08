@@ -1,5 +1,4 @@
 // import { ModeToggle } from "@/components/theme-toggle";
-import {  CommandIcon } from "lucide-react";
 import Link from "next/link";
 // import { buttonVariants } from "./ui/button";
 // import Search from "./search";
@@ -7,46 +6,48 @@ import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
+import Lightlogo from "@/public/Blackboxai-logo-white.svg";
+import Darklogo from "@/public/Blackboxai-logo-black.svg";
 
 export const NAVLINKS = [
   {
-    title: "Documentation",
-    href: `/docs${page_routes[0].href}`,
+    title: "GROK",
+    href: `/grok`,
   },
   {
-    title: "Blog",
+    title: "API",
+    href: "/api",
+  },
+  {
+    title: "BLOG",
     href: "/blog",
   },
   {
-    title: "Examples",
-    href: "#",
+    title: "DOCEMENTATION",
+    href: `/docs${page_routes[0].href}`,
   },
   {
-    title: "Guides",
-    href: "#",
-  },
-  {
-    title: "Community",
-    href: "https://github.com/nisabmohd/Aria-Docs/discussions",
+    title: "CAREERS",
+    href: "/careers",
   },
 ];
 
 export function Navbar() {
   return (
-    <nav className="w-full border-b h-16 sticky top-0 z-50 bg-background">
+    <nav className="w-full bg-black h-16 sticky top-0 z-50 bg-background">
       <div className="sm:container mx-auto w-[95vw] h-full flex items-center justify-between md:gap-2">
         <div className="flex items-center gap-5">
           <SheetLeftbar />
           <div className="flex items-center gap-6">
             <div className="sm:flex hidden">
-              <Logo />
+              <Logo></Logo>
             </div>
             <div className="lg:flex hidden items-center gap-4 text-sm font-medium text-muted-foreground">
               <NavMenu />
             </div>
           </div>
         </div>
-{/* 
+        {/* 
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
             <Search />
@@ -77,12 +78,14 @@ export function Navbar() {
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2.5">
-      <CommandIcon className="w-6 h-6 text-muted-foreground" strokeWidth={2} />
-      <h2 className="text-md font-bold font-code">AriaDocs</h2>
+    <Link href="/" className="">
+            <Lightlogo  className="  w-72 "/>
+            <Darklogo  className=" hidden w-72 "/>
+
     </Link>
   );
 }
+
 
 export function NavMenu({ isSheet = false }) {
   return (

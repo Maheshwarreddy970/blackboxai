@@ -71,6 +71,8 @@
   }
 
   body {
+    font-family: "SF Pro Text", sans-serif;
+    @apply font-sans;
     @apply bg-background text-foreground;
   }
 }
@@ -85,7 +87,7 @@ pre {
   overflow-x: auto;
 }
 
-pre>code {
+pre > code {
   display: grid;
   max-width: inherit !important;
   padding: 14px 0 !important;
@@ -115,6 +117,13 @@ pre>code {
   @apply px-2 -mb-8 w-full text-sm pb-5 font-medium mt-5 font-code;
 }
 
-.highlight-comp>code {
+.highlight-comp > code {
   background-color: transparent !important;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SF-Pro-Text-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
