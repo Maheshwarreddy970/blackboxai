@@ -8,6 +8,7 @@ import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
 import Lightlogo from "@/public/Blackboxai-logo-white.svg";
 import Darklogo from "@/public/Blackboxai-logo-black.svg";
+import { ModeToggle } from "./theme-toggle";
 
 export const NAVLINKS = [
   {
@@ -34,7 +35,7 @@ export const NAVLINKS = [
 
 export function Navbar() {
   return (
-    <nav className="w-full bg-black h-16 sticky top-0 z-50 bg-background">
+    <nav className="w-full bg-white dark:bg-black h-16 sticky top-0 z-50 bg-background">
       <div className="sm:container mx-auto w-[95vw] h-full flex items-center justify-between md:gap-2">
         <div className="flex items-center gap-5">
           <SheetLeftbar />
@@ -47,12 +48,12 @@ export function Navbar() {
             </div>
           </div>
         </div>
-        {/* 
+        
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
-            <Search />
+            {/* <Search /> */}
             <div className="flex ml-2.5 sm:ml-0">
-              <Link
+              {/* <Link
                 href="https://github.com/nisabmohd/NexDocs"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
@@ -66,11 +67,11 @@ export function Navbar() {
                 })}
               >
                 <TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
-              </Link>
+              </Link> */}
               <ModeToggle />
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </nav>
   );
@@ -79,8 +80,8 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="">
-            <Lightlogo  className="  w-72 "/>
-            <Darklogo  className=" hidden w-72 "/>
+            <Lightlogo  className="  hidden dark:block  w-72 "/>
+            <Darklogo  className=" dark:hidden w-72 "/>
 
     </Link>
   );

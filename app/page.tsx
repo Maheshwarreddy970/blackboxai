@@ -1,10 +1,18 @@
+"use client";
+
 import BlogCard from "@/components/ui/BlogCard";
 import JobCard from "@/components/ui/JobCard";
 import TextAnimated from "@/components/ui/TextAnimated";
 import { TextHoverEffect } from "@/components/ui/TextHoverEffect";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { useTheme } from "next-themes";
+import { useEffect } from "react";
 
 export default function Home() {
+  const { setTheme } = useTheme();
+useEffect(() => {
+  setTheme("dark")
+},[])
   return (
     <main>
       <div
