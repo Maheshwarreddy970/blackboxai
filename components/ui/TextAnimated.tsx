@@ -5,7 +5,7 @@ export default function TextAnimated({ children, text,link }: { text: string, ch
     return (
         <Link
             href={link}
-            className="relative group text-nowrap text-xl flex justify-center items-center gap-1 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-neutral-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-botto hover:after:translate-y-1 hover:after:scale-x-100"
+            className="relative text-xl lg:text-[1.5rem] flex justify-center text-nowrap gap-2 items-center after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full dark:after:bg-white after:bg-neutral-800  after:transition after:duration-300 opacity-60 hover:opacity-100   after:ease-in-out hover:after:translate-y-0.5 after:translate-y-1.5"
         >
             {text}
             {children && (

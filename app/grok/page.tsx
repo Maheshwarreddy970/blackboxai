@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <section className=' max-w-[80rem] mx-auto'>
+    <section className=' h-screen lg:h-auto max-w-[80rem] mx-auto'>
       <div
         style={{
           maskImage: `linear-gradient(to top, transparent, black 40%)`,

@@ -89,7 +89,7 @@ export default function Search() {
                   <DialogClose key={item.href} asChild>
                     <Anchor
                       className={cn(
-                        "dark:hover:bg-stone-900 hover:bg-stone-100 w-full px-3 rounded-sm text-sm flex items-center gap-2.5",
+                        "dark:hover:bg-stone-900 hover:bg-stone-100 w-full  rounded-sm text-sm flex items-center gap-2.5",
                         paddingClass
                       )}
                       href={`/docs${item.href}`}
