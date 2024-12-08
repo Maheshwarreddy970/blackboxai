@@ -31,7 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="bg-white dark:bg-black px-4 lg:px-0 h-auto scroll-smooth">
+          <main className="bg-white dark:bg-black h-auto scroll-smooth">
             {children}
           </main>
           <Footer />

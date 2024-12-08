@@ -14,7 +14,7 @@ export default function Home() {
     setTheme("dark")
   }, [])
   return (
-    <main className="max-w-[80rem] mx-auto">
+    <main className="max-w-[80rem] mx-auto  px-4 lg:px-0">
       <div
         style={{
           maskImage: `linear-gradient(to top, transparent, black 40%)`,

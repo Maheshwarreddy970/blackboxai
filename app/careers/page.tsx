@@ -57,7 +57,7 @@ const JobList = [
 ];
 export default function page() {
     return (
-        <section className='mx-auto w-[80rem]'>
+        <section className='mx-auto w-[80rem]  px-4 lg:px-0'>
             <div className=' flex flex-col h-screen justify-center my-32 gap-8 items-center'>
                 <p className=' text-3xl opacity-60 '>Careers at xAI</p>
                 <p className=' text-7xl font-light'>Build AI That Advances Humanity</p>
