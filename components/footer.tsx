@@ -4,7 +4,7 @@ import { HeartIcon, TriangleIcon } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className='  md:h-[7rem] gap-2 h-[10rem]  md:gap-20 mt-24 flex-col md:flex-row flex  justify-center items-center '>
+    <footer className='  md:h-[7rem] gap-2 h-[10rem] bg-black  md:gap-20 mt-24 flex-col md:flex-row flex  justify-center items-center '>
       <p className=' opacity-70 hover:opacity-100'>
       Grok
       </p>

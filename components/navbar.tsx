@@ -36,7 +36,7 @@ export const NAVLINKS = [
 export function Navbar() {
   return (
     <nav className="w-full bg-white dark:bg-black h-16 sticky top-0 z-50 bg-background">
-      <div className="sm:container mx-auto w-[95vw] h-full flex items-center justify-between md:gap-2">
+      <div className="sm:container max-w-[80rem] mx-auto h-full flex items-center justify-between md:gap-2">
         <div className="flex items-center gap-5">
           <SheetLeftbar />
           <div className="flex items-center gap-6">

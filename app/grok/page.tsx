@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function page() {
   return (
-   <section>
+   <section className=' max-w-[80rem] mx-auto'>
      <div
         style={{
           maskImage: `linear-gradient(to top, transparent, black 40%)`,
@@ -18,8 +18,8 @@ export default function page() {
             Announcing the xAI API
           </p>
           <div className=" flex  justify-center gap-7  ">
-            <TextAnimated text="Learn More"></TextAnimated>
-            <TextAnimated text="Try now">
+            <TextAnimated link='/api' text="Learn More"></TextAnimated>
+            <TextAnimated link='/' text="Try now">
               <ArrowUpRight size={22} color="currentColor" className=" group-hover:translate-x-1 rotate-45 group-hover:rotate-0 transition-all duration-300 ease-in-out" />
             </TextAnimated>
           </div>

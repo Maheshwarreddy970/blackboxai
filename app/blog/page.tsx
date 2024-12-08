@@ -12,7 +12,7 @@ export default async function BlogIndexPage() {
     (a, b) => stringToDate(b.date).getTime() - stringToDate(a.date).getTime()
   );
   return (
-    <div className="w-full mx-auto flex flex-col gap-1 sm:min-h-[91vh] min-h-[88vh] pt-2">
+    <div className="w-full mx-auto flex flex-col gap-1 max-w-[80rem] sm:min-h-[91vh] min-h-[88vh] pt-2">
       <div className="flex flex-col gap-5 my-24">
         <h1 className="text-7xl text-center">
           Blog

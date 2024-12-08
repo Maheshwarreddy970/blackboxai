@@ -14,12 +14,12 @@ useEffect(() => {
   setTheme("dark")
 },[])
   return (
-    <main>
+    <main className="max-w-[80rem] mx-auto">
       <div
         style={{
           maskImage: `linear-gradient(to top, transparent, black 40%)`,
         }}
-        className="h-[32rem] flex items-center  justify-center">
+        className="h-[32rem]   flex items-center  justify-center">
         <TextHoverEffect text="BLACKBOX.AI" />
       </div>
       <div>
@@ -28,32 +28,32 @@ useEffect(() => {
             Announcing the xAI API
           </p>
           <div className=" flex  justify-center gap-7  ">
-            <TextAnimated text="Learn More"></TextAnimated>
-            <TextAnimated text="Try now">
+            <TextAnimated link="/api" text="Learn More"></TextAnimated>
+            <TextAnimated link="/" text="Try now">
               <ArrowUpRight size={22} color="currentColor" className=" group-hover:translate-x-1 rotate-45 group-hover:rotate-0 transition-all duration-300 ease-in-out" />
             </TextAnimated>
           </div>
         </div>
       </div>
-      <section className=" max-w-[80rem]   mx-auto  mt-16">
+      <section className="  mt-16">
         <div className="flex gap-10 items-center px-3">
           <p className=" text-[2.5rem] ">Blog  </p>
           <div className="h-[2px] bg-gray-400 w-[95%] mx-auto  " />
-          <TextAnimated text="View all articles"></TextAnimated>
+          <TextAnimated link="/" text="View all articles"></TextAnimated>
         </div>
         <div className=" grid grid-cols-1 p-3 lg:grid-cols-3 gap-2 mt-8 lg:mt-28 leading-9">
-          <div className="text-2xl text-nowrap lg:text-[2rem] lg:text-wrap pl-2 mb-14 lg:mb-0 pr-16 opacity-80">
+          <div className="text-2xl text-nowrap font-thin lg:text-[2.1rem] lg:text-wrap pl-2 mb-14 lg:mb-0 pr-16 opacity-80">
             Read about our <br className='hidden lg:block'></br> latest announcements
           </div>
           <BlogCard
-          href="/"
+          href="/blog/file-rec"
             image="/api-teaser.webp"
             date="November 4, 2024"
             title="API Public Beta"
             subtitle="Starting today, developers can build on our Grok foundation models using our newly released API. We will run a public beta program until the end of 2024 during which everyone will get $25 of free API credits per month."
           ></BlogCard>
           <BlogCard
-          href="/"
+          href="/blog/file-rec"
             image="/image.png"
             date="November 4, 2024"
             title="API Public Beta"
@@ -65,7 +65,7 @@ useEffect(() => {
         <div className="flex gap-7 items-center">
           <p className=" text-3xl lg:text-[2.5rem] ">Careers  </p>
           <div className="h-px bg-gray-200 w-full " />
-          <TextAnimated text="View open roles"></TextAnimated>
+          <TextAnimated link="/" text="View open roles"></TextAnimated>
         </div>
         <div className=" grid lg:grid-cols-3 gap-2 mt-8 lg:mt-32 leading-9">
           <div className=" text-2xl mb-14 lg:mb-0 lg:text-[2rem] text-nowrap lg:text-wrap pl-2 pr-16 opacity-80">
