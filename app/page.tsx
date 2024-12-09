@@ -27,10 +27,10 @@ export default function Home() {
           <p className="text-[1.9rem]">
             Announcing the xAI API
           </p>
-          <div className=" flex  text-[1.5rem] justify-center gap-7  ">
+          <div className=" flex  text-[1.5rem] justify-center gap-3  ">
             <TextAnimated link="/api" text="Learn More"></TextAnimated>
-            <TextAnimated link="/" text="Try now">
-              <ArrowUpRight size={22} color="currentColor" className=" group-hover:translate-x-1 rotate-45 group-hover:rotate-0 transition-all duration-300 ease-in-out" />
+            <TextAnimated link="https://accounts.x.ai/sign-in?redirect=cloud-console" text="Try now">
+              <ArrowUpRight  size={25} color="currentColor" className=" group-hover:translate-x-1  rotate-0 transition-all duration-300 ease-in-out" />
             </TextAnimated>
           </div>
         </div>
@@ -39,10 +39,10 @@ export default function Home() {
         <div className="flex gap-10 items-center ">
           <p className="  text-3xl lg:text-[2.5rem] ">Blog  </p>
           <div className="h-[2px] bg-gray-400 w-[95%] mx-auto  " />
-          <TextAnimated link="/" text="View all articles"></TextAnimated>
+          <TextAnimated link="/blog" text="View all articles"></TextAnimated>
         </div>
         <div className=" grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8 lg:mt-28 leading-9">
-          <div className="text-2xl text-nowrap leading-tight font-thin lg:text-[2.1rem] lg:text-wrap mb-14 lg:mb-0 pr-16 opacity-80">
+          <div className="text-2xl leading-tight font-thin lg:text-[2.1rem] text-wrap mb-14 lg:mb-0 lg:pr-16 opacity-80">
             Read about our <br className='hidden lg:block'></br> latest announcements
           </div>
           <div className=" mt-7">
@@ -66,13 +66,13 @@ export default function Home() {
         </div>
       </section>
       <section className=" max-w-[80rem] mx-auto mt-64">
-        <div className="flex gap-7 items-center">
+        <div className="flex gap-3 items-center">
           <p className=" text-3xl lg: lg:text-[2.5rem] ">Careers  </p>
           <div className="h-px bg-gray-200 w-full " />
-          <TextAnimated link="/" text="View open roles"></TextAnimated>
+          <TextAnimated link="/careers" text="View open roles"></TextAnimated>
         </div>
         <div className=" grid lg:grid-cols-3 gap-2 mt-8 lg:mt-32 leading-9">
-          <div className=" text-xl text-nowrap leading-tight font-thin lg:text-[2.1rem] lg:text-wrap mb-14 lg:mb-0 pr-16 opacity-80">
+          <div className=" text-2xl leading-tight font-thin lg:text-[2.1rem] text-wrap mb-14 lg:mb-0 lg:pr-16 opacity-80">
             Work with us to <br className='hidden lg:block'></br> create a better future
           </div>
           <div className="  col-span-2 flex flex-col gap-12">
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
       </section>
       <section className=" max-w-[80rem] mx-auto lg:pb-64   mt-64">
-        <div className="flex gap-7 items-center">
+        <div className="flex gap-3 items-center">
           <p className=" text-3xl lg:text-[2.5rem] ">Developers  </p>
           <div className="h-px bg-gray-200 w-full " />
         </div>

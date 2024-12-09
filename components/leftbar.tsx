@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/sheet";
 import { Logo, NavMenu } from "./navbar";
 import { Button } from "./ui/button";
-import { AlignLeftIcon } from "lucide-react";
 import { FooterButtons } from "./footer";
 import { DialogTitle } from "./ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -27,11 +26,14 @@ export function SheetLeftbar() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden flex">
-          <AlignLeftIcon />
+        <Button variant="ghost" size="icon" className="md:hidden text-lg font-thin flex">
+          <span className="hover:underline">
+
+          Menu
+          </span>
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex flex-col gap-4 px-0" side="left">
+      <SheetContent className="flex flex-col gap-4 px-0" side="top">
         <DialogTitle className="sr-only">Menu</DialogTitle>
         <SheetHeader>
           <SheetClose className="px-5" asChild>

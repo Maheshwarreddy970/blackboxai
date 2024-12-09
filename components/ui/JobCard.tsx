@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function JobCard({ title, place }: { title: string, place: string }) {
   return (
-    <div className=" lg:flex grid grid-cols-3  gap-5 group lg:justify-between lg:items-center">
+    <div className=" lg:flex grid grid-cols-3  md:gap-5 group lg:justify-between lg:items-center">
       <div className=' col-span-2'>
         <p className=" text-2xl  text-wrap lg:text-[2rem]">{title} </p>
         <p className="lg:hidden opacity-75">

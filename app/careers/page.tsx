@@ -1,5 +1,5 @@
 import TextAnimated from '@/components/ui/TextAnimated'
-import { ArrowRight } from 'lucide-react'
+import { ArrowDown, ArrowRight } from 'lucide-react'
 import Link from 'next/link';
 import React from 'react'
 
@@ -57,19 +57,20 @@ const JobList = [
 ];
 export default function page() {
     return (
-        <section className='mx-auto w-[80rem]  px-4 lg:px-0'>
-            <div className=' flex flex-col h-screen justify-center my-32 gap-8 items-center'>
+        <section className=' max-w-[80rem] mx-auto px-4 lg:px-0 overflow-hidden'>
+            <div className=' flex flex-col relative h-[100vh] lg:h-auto justify-center py-44 gap-8 items-center'>
                 <p className=' text-3xl opacity-60 '>Careers at xAI</p>
-                <p className=' text-7xl font-light'>Build AI That Advances Humanity</p>
+                <p className=' text-5xl lg:text-7xl font-light text-center'>Build AI That Advances Humanity</p>
+                <ArrowDown className=" absolute bottom-10 lg:hidden group-hover:translate-x-2 transition-all group-hover:bg-white/10 border-white/30 ease-in-out duration-300 justify-center items-center p-2.5 border rounded-full size-12"></ArrowDown>
             </div>
-            <div className="flex gap-10 items-center ">
-                <p className=" text-[2.5rem] text-nowrap  font-thin">Work at xAI  </p>
+            <div className="flex gap-4 items-center ">
+                <p className=" text-3xl lg:text-[2.5rem] md:text-nowrap  font-thin">Work at xAI  </p>
                 <div className="h-[2px] bg-gray-400 w-[95%] mx-auto  " />
                 <TextAnimated link="/" text="View all articles"></TextAnimated>
             </div>
-            <div className="py-36 grid grid-cols-3  items-start p-4">
+            <div className="py-36 h-screen mt-28 grid lg:grid-cols-3  items-start lg:p-4">
                 <div className="text-strat">
-                    <h1 className="text-3xl font-light mb-8">Coding ≥ ∀ x</h1>
+                    <h1 className=" text-2xl lg:text-3xl font-light mb-8">Coding ≥ ∀ x</h1>
                 </div>
                 <div className=" col-span-2 space-y-5  leading-relaxed">
                     <p className="">
@@ -90,28 +91,28 @@ export default function page() {
                 </div>
             </div>
             <div className="flex gap-10 items-center ">
-                <p className=" text-[2.5rem] text-nowrap  font-thin">Locations  </p>
+                <p className=" text-3xl lg:text-[2.5rem] text-nowrap  font-thin">Locations  </p>
                 <div className="h-[2px] bg-gray-400 w-[95%] mx-auto  " />
             </div>
-            <div className='py-36 grid grid-cols-3  items-start p-4'>
+            <div className=' py-16 lg:py-36 h-screen grid lg:grid-cols-3  items-start lg:p-4'>
 
                 <div className="text-strat">
-                    <h1 className="text-3xl font-light mb-8">PA, SF, LDN</h1>
+                    <h1 className=" text-2xl lg:text-3xl font-light mb-8">PA, SF, LDN</h1>
                 </div>
                 <div className="col-span-2">
                     <div>
                         <p className=" font-light">We are currently hiring in downtown San Francisco, Palo Alto, and London, UK. Although we prefer to work in-person, we also offer remote work opportunities for exceptional candidates.</p>
                     </div>
                     <div className="flex flex-col mt-16  md:flex-row justify-center items-start space-y-8 md:space-y-0 md:space-x-8">
-                        <div className="text-center border-r pr-8  border-gray-300 md:text-left">
-                            <h2 className="text-3xl   font-thin text-nowrap mb-7">Palo Alto, CA</h2>
+                        <div className="lg:text-center lg:border-r lg:pr-8  border-gray-300 md:text-left">
+                            <h2 className="  text-2xl lg:text-xl    font-thin text-nowrap mb-7">Palo Alto, CA</h2>
                             <p className="text-base font-light">Our Palo Alto office houses the majority of our core research teams including our pre-training, post-training, and vision teams.</p>
                         </div>
-                        <div className=" text-center md:text-left">
-                            <h2 className="text-3xl   font-thin text-nowrap mb-7">San Francisco, CA</h2>
+                        <div className=" lg:text-center md:text-left">
+                            <h2 className=" text-2xl lg:text-xl   font-thin text-nowrap mb-7">San Francisco, CA</h2>
                             <p className="text-base font-light">Our infrastructure team takes care of our large compute clusters and is predominantly located in San Francisco.</p>
                         </div>
-                        <div className="border-l border-gray-300 pl-8 text-center md:text-left">
+                        <div className="lg:border-l border-gray-300 lg:pl-8 lg:text-center md:text-left">
                             <h2 className="text-3xl   font-thin text-nowrap mb-7">London, UK</h2>
                             <p className="text-base font-light">Our London team consists of highly experienced engineers who works on large-scale distributed systems across data, research, and product.</p>
                         </div>
@@ -119,10 +120,10 @@ export default function page() {
                 </div>
             </div>
             <div className="flex gap-10 items-center ">
-                <p className=" text-[2.5rem] text-nowrap  font-thin">Interview proces   </p>
+                <p className=" text-3xl lg:text-[2.5rem] text-nowrap  font-thin">Interview proces   </p>
                 <div className="h-[2px] bg-gray-400 w-[95%] mx-auto  " />
             </div>
-            <div className="py-36 grid grid-cols-3  items-start p-4">
+            <div className=" py-16 lg:py-36 grid h-screen lg:grid-cols-3  items-start lg:p-4">
                 <div className="text-strat">
                     <h1 className="text-3xl font-light mb-8">Step-by-step</h1>
                 </div>
@@ -142,16 +143,16 @@ export default function page() {
                 </div>
             </div>
             <div className="h-[1px] bg-gray-600 w-full " />
-            <div className=' grid grid-cols-1 lg:grid-cols-3 my-16'>
-                <div className=' col-span-1'>
-                    <p className='text-[1.6rem] opacity-75 font-thin'>
+            <div className=' grid grid-cols-1 lg:grid-cols-3 my-10'>
+                <div className=' col-span-1 my-10'>
+                    <p className=' text-2xl lg:text-[1.6rem] opacity-75 font-thin'>
                         Data Center Operations
                     </p>
                 </div>
                 <div className=' lg:col-span-2 flex flex-col gap-9 '>
                     {JobList.map((job, i) => (
-                        <Link href={job.link} key={i} className=' group grid grid-cols-2  text-lg font-thin'>
-                            <div className=' flex flex-col'>
+                        <Link href={job.link} key={i} className=' group grid grid-cols-3 lg:grid-cols-2  text-lg font-thin'>
+                            <div className=' col-span-2 lg:col-span-1 flex flex-col'>
                                 <span>
                                 {job.title}
                                 </span>
@@ -163,7 +164,7 @@ export default function page() {
                                 <span className=' hidden lg:block opacity-75'>
                                 {job.location}
                                 </span>
-                                <ArrowRight className="hidden group-hover:translate-x-2 transition-all group-hover:bg-white/10 border-white/30 ease-in-out duration-300 lg:flex justify-center items-center p-2.5 border rounded-full size-12"></ArrowRight>
+                                <ArrowRight className=" group-hover:translate-x-2 transition-all group-hover:bg-white/10 border-white/30 ease-in-out duration-300 lg:flex justify-center items-center p-2.5 border rounded-full size-12"></ArrowRight>
 
                             </div>
                         </Link>))}

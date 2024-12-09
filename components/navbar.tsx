@@ -6,7 +6,6 @@ import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
-import { ModeToggle } from "./theme-toggle";
 import BlackLogo from "@/icons/BlackLogo";
 import WhiteLogo from "@/icons/WhiteLogo";
 
@@ -35,12 +34,11 @@ export const NAVLINKS = [
 
 export function Navbar() {
   return (
-    <nav className="w-full fixed bg-white dark:bg-black h-20 top-0 z-50 bg-background">
+    <nav className="w-full fixed bg-white px-4 dark:bg-black h-20 top-0 z-50 bg-background">
       <div className=" max-w-[80rem] mx-auto h-full flex items-center justify-between md:gap-2">
         <div className="flex items-center gap-5">
-          <SheetLeftbar />
           <div className="flex items-center gap-6">
-            <div className="sm:flex hidden">
+            <div className="">
               <Logo></Logo>
             </div>
             <div className="lg:flex hidden items-center gap-4 text-sm font-medium text-muted-foreground">
@@ -68,9 +66,11 @@ export function Navbar() {
               >
                 <TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
               </Link> */}
-              <ModeToggle />
+              {/* <ModeToggle /> */}
             </div>
           </div>
+          <SheetLeftbar />
+
         </div>
       </div>
     </nav>

@@ -31,9 +31,9 @@ export default function Anchor({
       <div className={cn(className, "cursor-not-allowed")}>{children}</div>
     );
   return (
-    <Link className={cn(className, isMatch && activeClassName, isMatch ? "opacity-100" : "opacity-50", "hover:opacity-100")} {...props}>
-      <div className={cn("relative after:absolute font-normal text-lg after:bg-white after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:translate-y-0.5 hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300",isMatch && "")}>
-        <span className={cn("text-white",isMatch && "")}>{children}</span>
+    <Link className={cn(className, isMatch && activeClassName, isMatch ? " lg:opacity-100 " : " lg:opacity-50", "hover:opacity-100")} {...props}>
+      <div className={cn(" text-white text-3xl md:text-base ",!isMatch ? " relative after:absolute after:bottom-0 after:left-0 after:h-[1.6px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100" : " border-b-[2px]  border-blue-500")}>
+        {children}
       </div>
     </Link>
   );
