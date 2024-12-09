@@ -26,7 +26,7 @@ const FooterLinks = [
 ]
 export function Footer() {
   return (
-    <footer className='  md:h-[7rem] gap-2 h-[10rem] bg-black  md:gap-20 my-24 flex-col md:flex-row flex  justify-center items-center '>
+    <footer className='   md:h-[7rem] gap-2 h-[10rem]  bg-black  md:gap-20  font-thin flex-col md:flex-row flex  justify-center items-center '>
       {
         FooterLinks.map((link,i) => (
           <Link href={link.href} key={i} className=' opacity-70 hover:opacity-100'>
